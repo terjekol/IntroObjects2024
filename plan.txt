@@ -1,0 +1,11 @@
+- Vise objekter grunnleggende i console
+- Funksjoner som returnerer objekt
+    - gjennomsnittfarge, gradient (liste), inv invertere. Endre lysere og mørkere. 
+    - liste av tall inn => statistikk tilbake
+    - tidsperiode i sekunder, minutter, timer
+- Objekter inne i objekter - Hele modellen i et objekt
+- Modellere virkeligheten, lister av objekter, neste time - men nå kan dere lage "alt"
+- Problemer med referansetyper, objekter og lister som parametre
+  - Kan man beskytte verdiene ved å deklarere objektet som const?
+  - null og undefined, hvilke feil det skaper
+- for in og objekter med arraysyntaks, feks telle ord
