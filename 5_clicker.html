@@ -17,32 +17,34 @@
 
     <script>
         // model
-        points = 0;
-        pointsPerClick = 1;
-        smileyIndex = 0;
+        let model = {
+            points: 0,
+            pointsPerClick: 1,
+            smileyIndex: 0,
+        }
 
         // view
         updateView();
         function updateView() {
-            var smiley = smileyIndex == 0 ? '😀' : '😁';
+            var smiley = model.smileyIndex == 0 ? '😀' : '😁';
             document.getElementById('app').innerHTML = /*HTML*/ `
                 <div id="image" onclick="doClick()">${smiley}</div>
-                <div id="pointsInfo">${points}</div>
+                <div id="pointsInfo">${model.points}</div>
                 <button onclick="buyUpgrade()">Kjøp oppgradering (10 poeng)</button>                
                 `;
         }
 
         // controller
         function doClick() {
-            points += pointsPerClick;
-            smileyIndex = 1 - smileyIndex;
+            model.points += model.pointsPerClick;
+            model.smileyIndex = 1 - model.smileyIndex;
             updateView();
         }
 
         function buyUpgrade() {
-            if (points < 10) return;
-            points -= 10;
-            pointsPerClick++;
+            if (model.points < 10) return;
+            model.points -= 10;
+            model.pointsPerClick++;
             updateView();
         }
     </script>
