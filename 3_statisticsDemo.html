@@ -11,9 +11,10 @@
     <script>
         let numbers = [1, 2, 4, 8, 16];
 
+        createStats(numbers);
         function createStats(numbers) {
             if (!numbers || numbers.length == 0) {
-                return { sum: 0, count: 0 };
+                console.log('sum: 0, antall verdier: 0');
             }
             let min = numbers[0];
             let max = numbers[0];
@@ -26,10 +27,8 @@
             }
             let count = numbers.length
             let mean = sum / count;
-            return { min, max, sum, count, mean };
+            console.log(`sum: ${sum}, antall verdier: ${count}, min: ${min}, max: ${max}, snitt: ${mean}`);
         }
-
-
     </script>
 </body>
 

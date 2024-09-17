@@ -1,13 +1,12 @@
 1: Vise objekter grunnleggende i console
-2: Funksjoner som returnerer objekt
-   Eksempel: gjennomsnittfarge, gradient (liste), inv invertere. Endre lysere og mørkere. 
-
-   
-    - liste av tall inn => statistikk tilbake
+Funksjoner som returnerer objekt
+   2: Eksempel: gjennomsnittfarge, gradient (liste), inv invertere. Endre lysere og mørkere. 
+   3: Eksempel: liste av tall inn => statistikk tilbake
     - tidsperiode i sekunder, minutter, timer
-- Objekter inne i objekter - Hele modellen i et objekt
-- Modellere virkeligheten, lister av objekter, neste time - men nå kan dere lage "alt"
-- Problemer med referansetyper, objekter og lister som parametre
+5: Objekter inne i objekter - Hele modellen i et objekt
+6: Modellere virkeligheten, lister av objekter, neste time - men nå kan dere lage "alt"
+7: Problemer med referansetyper, objekter og lister som parametre
+  - const og let + begrensninger
   - Kan man beskytte verdiene ved å deklarere objektet som const?
   - null og undefined, hvilke feil det skaper
-- for in og objekter med arraysyntaks, feks telle ord
+8: for in og objekter med arraysyntaks, feks telle ord
