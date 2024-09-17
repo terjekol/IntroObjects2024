@@ -1,4 +1,5 @@
 1: Vise objekter grunnleggende i console
+
 Funksjoner som returnerer objekt
    2: Eksempel: gjennomsnittfarge, gradient (liste), inv invertere. Endre lysere og mørkere. 
    3: Eksempel: liste av tall inn => statistikk tilbake

@@ -7,12 +7,13 @@
     <title>Document</title>
     <style>
         #myDiv {
-            width: 12vw;
-            height: 12vw;
+            width: 300px;
+            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 5vw;
+            font-size: 100px;
+            border: 30px solid black;
         }
     </style>
 </head>
@@ -22,16 +23,37 @@
         Test
     </div>
     <script>
-        demoColor(50, 100, 200);
+        let exampleColor = { red: 50, green: 50, blue: 250 };
+        demoColor(exampleColor);
 
-        function demoColor(red, green, blue) {
+        function demoColor(color) {
+            let white = { red: 255, green: 255, blue: 255 };
             let myDiv = document.getElementById('myDiv');
-            myDiv.style.backgroundColor = getColorCss(red, green, blue);
-            myDiv.style.color = getColorCss(255 - red, 255 - green, 255 - blue);
+            myDiv.style.backgroundColor = getColorCss(color);
+            let invertedColor = invertColor(color);
+            myDiv.style.color = getColorCss(invertedColor);
+            let meanColor = getMeanColor(color, white);
+            myDiv.style.borderColor = getColorCss(meanColor);
         }
 
-        function getColorCss(red, green, blue) {
-            return `rgb(${red}, ${green}, ${blue})`;
+        function invertColor(color) {
+            return {
+                red: 255 - color.red,
+                green: 255 - color.green,
+                blue: 255 - color.blue
+            };
+        }
+
+        function getMeanColor(color1, color2) {
+            return {
+                red: (color1.red + color2.red) / 2,
+                green: (color1.green + color2.green) / 2,
+                blue: (color1.blue + color2.blue) / 2,
+            };
+        }
+
+        function getColorCss(color) {
+            return `rgb(${color.red}, ${color.green}, ${color.blue})`;
         }
     </script>
 </body>
