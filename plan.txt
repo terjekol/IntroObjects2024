@@ -6,7 +6,9 @@ Funksjoner som returnerer objekt
    4: Eksempel: tidsperiode i sekunder, minutter, timer
 5: Objekter inne i objekter - Hele modellen i et objekt
    Eksempel: clicker
-6: Modellere virkeligheten, lister av objekter, neste time - men nå kan dere lage "alt"
+6: Modellere virkeligheten, lister av objekter, neste time 
+   - men nå kan dere lage "alt"
+   - mer om dette i neste time!
 7: Problemer med referansetyper, objekter og lister som parametre
   - const og let + begrensninger
   - Kan man beskytte verdiene ved å deklarere objektet som const?
