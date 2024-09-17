@@ -14,7 +14,7 @@
         createStats(numbers);
         function createStats(numbers) {
             if (!numbers || numbers.length == 0) {
-                console.log('sum: 0, antall verdier: 0');
+                show('sum: 0, antall verdier: 0');
             }
             let min = numbers[0];
             let max = numbers[0];
@@ -27,7 +27,11 @@
             }
             let count = numbers.length
             let mean = sum / count;
-            console.log(`sum: ${sum}, antall verdier: ${count}, min: ${min}, max: ${max}, snitt: ${mean}`);
+            show(`sum: ${sum}, antall verdier: ${count}, min: ${min}, max: ${max}, snitt: ${mean}`);
+        }
+
+        function show(text){
+            document.body.innerText += text;            
         }
     </script>
 </body>
