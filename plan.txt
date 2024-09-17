@@ -1,6 +1,8 @@
-- Vise objekter grunnleggende i console
-- Funksjoner som returnerer objekt
-    - gjennomsnittfarge, gradient (liste), inv invertere. Endre lysere og mørkere. 
+1: Vise objekter grunnleggende i console
+2: Funksjoner som returnerer objekt
+   Eksempel: gjennomsnittfarge, gradient (liste), inv invertere. Endre lysere og mørkere. 
+
+   
     - liste av tall inn => statistikk tilbake
     - tidsperiode i sekunder, minutter, timer
 - Objekter inne i objekter - Hele modellen i et objekt

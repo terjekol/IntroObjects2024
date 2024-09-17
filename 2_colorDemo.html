@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv {
+            width: 12vw;
+            height: 12vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: calc(5vw);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv">
+        Test
+    </div>
+    <script>
+        demoColor(50, 100, 200);
+        function demoColor(red, green, blue) {
+            let myDiv = document.getElementById('myDiv');
+            myDiv.style.backgroundColor = getColorCss(red, green, blue);
+        }
+
+        function getColorCss(red, green, blue) {
+            return `rgb(${red}, ${green}, ${blue})`;
+        }
+    </script>
+</body>
+
+</html>
