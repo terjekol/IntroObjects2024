@@ -10,4 +10,4 @@ Funksjoner som returnerer objekt
   - const og let + begrensninger
   - Kan man beskytte verdiene ved å deklarere objektet som const?
   - null og undefined, hvilke feil det skaper
-8: for in og objekter med arraysyntaks, feks telle ord
+8: for in og objekter med arraysyntaks, feks telle bokstaver eller ord
